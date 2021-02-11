@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+:root {
+    --contact: #00dba5;
+    --navbar-color: #fff;
+    --button-primary: #00dba5;
+    --button-secondary: #00bf99;
+    --icon-color: #cc0033;
+}
+// var(--navbar-color);
+* {
+    font-family: "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.hizliErisim {
+    .whatsapp {
+        width: 100px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+.navbar-topline {
+    background: var(--contact);
+    height: 35px;
+    color: purple;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        a {
+            color: #fff;
+            line-height: 35px;
+            &:hover {
+                text-shadow: 2px 2px #c5c5c5;
+            }
+            i {
+                color: #e67b3e;
+                margin-right: 10px;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+.navbar {
+    background-color: var(--navbar-color);
+    height: 100px;
+    .container {
+        .collapse {
+            ul {
+                li {
+                    a {
+                        color: var(--button-primary);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact {
+    height: 280px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .container {
+        .indirim {
+            p {
+                font-size: 2rem;
+            }
+            .form-group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .btn {
+                    background: #62f7a0;
+                    padding: 12px;
+                    margin-left: 10px;
+                    font-weight: bold;
+                }
+                input {
+                    outline: 0;
+                    border: none;
+                    background: #bee9d0;
+                    border-radius: 2px;
+                    height: 50px;
+                    width: 300px;
+                    font-size: 2rem;
+                    color: #cc0033;
+                    padding: 15px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &__baslik {
+        color: #444;
+        font-weight: 700;
+    }
+}
+
+.experience {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 180px;
+        .fas {
+            font-size: 2rem;
+            color: var(--icon-color);
+        }
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+
+        flex-direction: column;
+        h2 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        h3 {
+            font-weight: 300;
+            font-size: 16px;
+            color: #787878;
+        }
+    }
+}
+.islemler {
+    padding: 50px;
+    &__baslik {
+        color: #444;
+        font-weight: bold;
+        &::after {
+            content: "";
+            border-bottom: 3px solid #cc0033;
+            display: block;
+            width: 60px;
+            margin: 20px auto;
+        }
+    }
+    &__aciklama {
+        color: #787878;
+        padding-bottom: 50px;
+    }
+    div {
+        .service-card {
+            border: 5px solid #f6f7f5;
+            padding: 40px;
+            i {
+                color: #cc0033;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+            h5 {
+                font-weight: bold;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+//  Galeri
+
+.oncesiSonrasi,
+.basarilarimiz {
+    background: rgb(250, 250, 250);
+}
+.gallery {
+    h1 {
+        padding-top: 2rem;
+        color: #444;
+        font-weight: 700;
+    }
+    &__title {
+        font-size: 36px;
+        color: #444;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 70px;
+    }
+    &__product {
+        margin-bottom: 30px;
+        .img {
+            width: 375px;
+            height: 375px;
+            object-fit: cover;
+            border-radius: 3px;
+        }
+    }
+}
+
+.aylikDegisim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__baslik {
+        color: #444;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 40px 0 10px 0;
+        &::after {
+            content: "";
+            border-bottom: 3px solid #cc0033;
+            display: block;
+            width: 60px;
+            margin: 20px auto;
+        }
+    }
+}
+
+// Footer
+.harita {
+    margin: 0 auto;
+    width: 95%;
+}
+footer {
+    height: 500px;
+    padding-top: 50px;
+    .container {
+        ul {
+            padding: 0;
+        }
+        li {
+            padding-bottom: 5px;
+        }
+        .iletisim {
+            display: flex;
+            flex-direction: column;
+            .sosyalMedya {
+                a {
+                    font-size: 2rem;
+                    .fa-instagram {
+                        background: -webkit-linear-gradient(45deg, rgb(236, 233, 7), #cc0033, #3d00cc);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    .fa-linkedin {
+                        color: #0077b5;
+                    }
+                }
+            }
+        }
+    }
+
+    .calismaSaatleri {
+        ul {
+            li {
+                span {
+                    color: rgb(110, 110, 110);
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+.contact{
+    margin-top: 2rem;
+}
+}
+@media only screen and (max-width: 767px) {
+    .experience {
+
+        &__icon {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: -50px;
+            height: 180px;
+            .fas {
+                font-size: 2rem;
+                color: var(--icon-color);
+            }
+        }
+       
+    }
+}

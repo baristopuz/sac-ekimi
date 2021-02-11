@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+:root {
+  --contact: #00dba5;
+  --navbar-color: #fff;
+  --button-primary: #00dba5;
+  --button-secondary: #00bf99;
+  --icon-color: #cc0033;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hizliErisim .whatsapp {
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-topline {
+  background: var(--contact);
+  height: 35px;
+  color: purple;
+}
+
+.navbar-topline .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.navbar-topline .container a {
+  color: #fff;
+  line-height: 35px;
+}
+
+.navbar-topline .container a:hover {
+  text-shadow: 2px 2px #c5c5c5;
+}
+
+.navbar-topline .container a i {
+  color: #e67b3e;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  background-color: var(--navbar-color);
+  height: 100px;
+}
+
+.navbar .container .collapse ul li a {
+  color: var(--button-primary);
+  font-weight: bold;
+}
+
+.contact {
+  height: 280px;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.contact .container .indirim p {
+  font-size: 2rem;
+}
+
+.contact .container .indirim .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .container .indirim .form-group .btn {
+  background: #62f7a0;
+  padding: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.contact .container .indirim .form-group input {
+  outline: 0;
+  border: none;
+  background: #bee9d0;
+  border-radius: 2px;
+  height: 50px;
+  width: 300px;
+  font-size: 2rem;
+  color: #cc0033;
+  padding: 15px;
+  margin-left: 5px;
+}
+
+.contact__baslik {
+  color: #444;
+  font-weight: 700;
+}
+
+.experience {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.experience__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 180px;
+}
+
+.experience__icon .fas {
+  font-size: 2rem;
+  color: var(--icon-color);
+}
+
+.experience__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experience__text h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.experience__text h3 {
+  font-weight: 300;
+  font-size: 16px;
+  color: #787878;
+}
+
+.islemler {
+  padding: 50px;
+}
+
+.islemler__baslik {
+  color: #444;
+  font-weight: bold;
+}
+
+.islemler__baslik::after {
+  content: "";
+  border-bottom: 3px solid #cc0033;
+  display: block;
+  width: 60px;
+  margin: 20px auto;
+}
+
+.islemler__aciklama {
+  color: #787878;
+  padding-bottom: 50px;
+}
+
+.islemler div .service-card {
+  border: 5px solid #f6f7f5;
+  padding: 40px;
+}
+
+.islemler div .service-card i {
+  color: #cc0033;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.islemler div .service-card h5 {
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+
+.oncesiSonrasi,
+.basarilarimiz {
+  background: #fafafa;
+}
+
+.gallery h1 {
+  padding-top: 2rem;
+  color: #444;
+  font-weight: 700;
+}
+
+.gallery__title {
+  font-size: 36px;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.gallery__product {
+  margin-bottom: 30px;
+}
+
+.gallery__product .img {
+  width: 375px;
+  height: 375px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+}
+
+.aylikDegisim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aylikDegisim__baslik {
+  color: #444;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 40px 0 10px 0;
+}
+
+.aylikDegisim__baslik::after {
+  content: "";
+  border-bottom: 3px solid #cc0033;
+  display: block;
+  width: 60px;
+  margin: 20px auto;
+}
+
+.harita {
+  margin: 0 auto;
+  width: 95%;
+}
+
+footer {
+  height: 500px;
+  padding-top: 50px;
+}
+
+footer .container ul {
+  padding: 0;
+}
+
+footer .container li {
+  padding-bottom: 5px;
+}
+
+footer .container .iletisim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .iletisim .sosyalMedya a {
+  font-size: 2rem;
+}
+
+footer .container .iletisim .sosyalMedya a .fa-instagram {
+  background: -webkit-linear-gradient(45deg, #ece907, #cc0033, #3d00cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer .container .iletisim .sosyalMedya a .fa-linkedin {
+  color: #0077b5;
+}
+
+footer .calismaSaatleri ul li span {
+  color: #6e6e6e;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+  .contact {
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .experience__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: -50px;
+    height: 180px;
+  }
+  .experience__icon .fas {
+    font-size: 2rem;
+    color: var(--icon-color);
+  }
+}
+/*# sourceMappingURL=main.css.map */
