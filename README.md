@@ -1,2 +1,2 @@
 # sac-ekimi
-Staj
+Staj için dosyalar yüklendi.
